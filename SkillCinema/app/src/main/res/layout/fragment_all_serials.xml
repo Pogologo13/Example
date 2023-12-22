@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".ui.detail.seasons_detail.AllSerialsFragment">
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/ic_arrow_left"
+            style="@style/title.3"
+            android:gravity="center"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_8"
+            android:gravity="center"
+            style="@style/title.2"
+            tools:text="@string/actors"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_all_serials"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2"
+            tools:listitem="@layout/view_element_recycle"/>
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/load_state_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:progressTint="?attr/colorPrimary"
+            android:layout_marginTop="@dimen/_56dp"/>
+
+</FrameLayout>

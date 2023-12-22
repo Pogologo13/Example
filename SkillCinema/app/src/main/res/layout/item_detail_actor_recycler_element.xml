@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="@dimen/margin_8">
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/actor_avatar"
+            android:layout_width="49dp"
+            android:layout_height="68dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            tools:src="@tools:sample/avatars"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/actor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/title.3_black"
+            android:layout_margin="4dp"
+            android:layout_alignTop="@id/card"
+            android:layout_toEndOf="@id/card"
+            tools:text="@tools:sample/lorem"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/actor_hero_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/title.3"
+            android:layout_margin="4dp"
+            android:layout_below="@id/actor_name"
+            android:layout_toEndOf="@id/card"
+            tools:text="@tools:sample/lorem"/>
+
+</RelativeLayout>

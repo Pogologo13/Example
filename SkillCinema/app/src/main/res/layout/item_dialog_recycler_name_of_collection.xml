@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/X2_fab_margin"
+            android:layout_marginTop="@dimen/margin_8"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/checkbox"
+            android:layout_alignTop="@+id/checkbox"
+            android:layout_margin="12dp"
+            tools:text="@string/collections"
+            style="@style/title.3_black"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/text"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:text="@string/_0"
+            style="@style/title.3_black"
+            tools:ignore="RelativeOverlap"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".ui.detail.actor_detail.ActorDetailFragment">
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/ic_arrow_left"
+            style="@style/title.3"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="128dp"
+            android:layout_height="180dp"
+            app:cardCornerRadius="@dimen/margin_8"
+            android:layout_margin="@dimen/fab_margin"
+            app:layout_constraintTop_toBottomOf="@id/button_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/name_of_actor"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintHorizontal_bias="0.1">
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                tools:src="@tools:sample/avatars"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/name_of_actor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_blank_fragment"
+            android:layout_marginStart="@dimen/margin_8"
+            app:layout_constraintTop_toTopOf="@id/card_view"
+            app:layout_constraintStart_toEndOf="@id/card_view"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="@+id/card_view"/>
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/profession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/app_name"
+            app:layout_constraintStart_toStartOf="@+id/name_of_actor"
+            app:layout_constraintTop_toBottomOf="@+id/name_of_actor"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title_the_best"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/theBest"
+            android:layout_marginTop="@dimen/fab_margin"
+            app:layout_constraintTop_toBottomOf="@id/card_view"
+            app:layout_constraintStart_toStartOf="@id/card_view"
+            style="@style/title.3_black"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/the_more_best_films"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toTopOf="@id/title_the_best"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/title.3_button"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_of_the_best"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="@dimen/fab_margin"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            tools:listitem="@layout/view_element_recycle"
+            app:layout_constraintTop_toBottomOf="@id/title_the_best"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/load_state_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/X2_fab_margin"
+            android:indeterminate="true"
+            app:layout_constraintTop_toBottomOf="@id/title_the_best"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title_of_film"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/filmography"
+            android:layout_marginTop="@dimen/fab_margin"
+            app:layout_constraintTop_toBottomOf="@id/recycler_of_the_best"
+            app:layout_constraintStart_toStartOf="@id/recycler_of_the_best"
+            style="@style/title.3_black"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/to_all_films"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to_all_films"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:focusable="true"
+            android:clickable="true"
+            app:layout_constraintTop_toTopOf="@id/title_of_film"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/title.3_button"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/film_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/filmography"
+            app:layout_constraintTop_toBottomOf="@id/title_of_film"
+            app:layout_constraintStart_toStartOf="@id/recycler_of_the_best"
+            style="@style/title.3"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

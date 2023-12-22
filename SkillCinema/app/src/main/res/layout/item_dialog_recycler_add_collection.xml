@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/add_collection_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plus"
+            android:layout_marginStart="@dimen/X2_fab_margin"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:layout_marginEnd="@dimen/fab_margin"
+            style="@style/title.2"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/add_collection_text"
+            android:layout_alignTop="@+id/add_collection_text"
+            android:layout_alignBottom="@id/add_collection_text"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:layout_marginTop="6dp"
+            android:text="@string/create_collection"
+            style="@style/title.3_black"/>
+
+
+</RelativeLayout>

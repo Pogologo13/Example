@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">SkillCinema</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="noti">noti</string>
+    <string name="title_activity_start">StartActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="skip">Пропустить</string>
+    <string name="premires">Узнавай</string>
+    <string name="premiers2">о премьерах</string>
+    <string name="collections">коллекции</string>
+    <string name="create">Создавай</string>
+    <string name="share">Делись</string>
+    <string name="for_friends">с друзьями</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="second_home">second_home</string>
+    <string name="title">TITLE</string>
+    <string name="all">Вce</string>
+    <string name="arg">argument</string>
+    <string name="more">more</string>
+    <string name="gallery">Gallery</string>
+    <string name="actors">В фильме снимались</string>
+    <string name="not_actors">Над фильмом работали</string>
+    <string name="_0">0</string>
+    <string name="seasons">Сезоны и серии</string>
+    <string name="Season">Сезон</string>
+    <string name="show_all">Показать все</string>
+    <string name="theBest">Лучшее</string>
+    <string name="filmography">Фильмография</string>
+    <string name="to_all_films"><![CDATA[К списку >]]></string>
+    <string name="add_collection">Добавить в коллекцию</string>
+    <string name="plus">+</string>
+    <string name="create_collection">Создать свою коллекцию</string>
+    <string name="new_name_collection">Придумайте название для вашей новой коллекции</string>
+    <string name="is_done">Готово</string>
+    <string name="similars">Похожие Фильмы</string>
+    <string name="viewed">Просмотрено</string>
+    <string name="create_collections">+ Создать свою коллекцию</string>
+    <string name="was_intersted">Вам было интересно</string>
+    <string name="search_hint">Фильмы, Актеры, Режиссеры</string>
+    <string name="films">Фильмы</string>
+    <string name="serials">Сериалы</string>
+    <string name="search_parameter">Настройки поиска</string>
+    <string name="show">Показывать</string>
+    <string name="Russia">Россия</string>
+    <string name="strana">Страна</string>
+    <string name="genre">Жанр</string>
+    <string name="comedy">Комедия</string>
+    <string name="year">Год</string>
+    <string name="period">с 1000 до 3000</string>
+    <string name="rate">Рейтинг</string>
+    <string name="does_not_matter">любой</string>
+    <string name="date">Дата</string>
+    <string name="popular">Популярность</string>
+    <string name="unviewed">Не Просмотрен</string>
+    <string name="all_countries">Все страны</string>
+    <string name="all_genres">Все жанры</string>
+    <string name="date_from">Искать в период с</string>
+    <string name="title_period">Период</string>
+    <string name="ic_arrow_left"><![CDATA[<]]></string>
+    <string name="ic_arrow_right"><![CDATA[>]]></string>
+    <string name="to_date">Искать в период до</string>
+    <string name="error_date">Начальная дата должна быть меньше конечной</string>
+    <string name="sorting">Сортировать</string>
+
+    <plurals name="seasons">
+        <item quantity="zero">%1$d сезонов</item>
+        <item quantity="one">%1$d сезон</item>
+        <item quantity="few">%1$d сезона</item>
+        <item quantity="many">%1$d сезонов</item>
+        <item quantity="other">%1$d сезонов</item>
+    </plurals>
+
+    <plurals name="episodes">
+        <item quantity="zero">%1$d серий</item>
+        <item quantity="one">%1$d серия</item>
+        <item quantity="few">%1$d серии</item>
+        <item quantity="many">%1$d серий</item>
+        <item quantity="other">%1$d серий</item>
+    </plurals>
+
+    <plurals name="films">
+        <item quantity="zero">%1$d фильмов</item>
+        <item quantity="one">%1$d фильм</item>
+        <item quantity="few">%1$d фильма</item>
+        <item quantity="many">%1$d фильмов</item>
+        <item quantity="other">%1$d фильмов</item>
+    </plurals>
+
+    <array name="slider_values">
+        <item>0.0</item>
+        <item>10.0</item>
+    </array>
+</resources>

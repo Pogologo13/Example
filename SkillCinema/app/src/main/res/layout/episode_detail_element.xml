@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/episode_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/title.2"
+            tools:text="@tools:sample/lorem"/>
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/episode_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/episode_name"
+            style="@style/title.2"
+            tools:text="@tools:sample/lorem"/>
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/episode_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/title.3"
+            android:layout_below="@+id/episode_name"
+            tools:text="@tools:sample/lorem"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_128dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:src="@drawable/outline"
+            android:layout_marginTop="@dimen/_4dp" android:layout_marginStart="@dimen/_4dp"
+            android:layout_marginEnd="@dimen/_4dp" android:layout_marginBottom="@dimen/_4dp"/>
+
+</RelativeLayout>

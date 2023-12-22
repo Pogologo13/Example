@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_8">
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_marginEnd="@dimen/margin_8"
+            android:elevation="1dp"
+            app:cardCornerRadius="@dimen/margin_8">
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/poster_preview"
+                android:layout_width="111dp"
+                android:layout_height="156dp"
+                android:background="@drawable/outline"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/die"
+            android:layout_width="24dp"
+            android:layout_height="16dp"
+            android:elevation="2dp"
+            android:background="@drawable/outline"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_alignEnd="@+id/card"
+            android:layout_alignTop="@+id/card"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/die_title"
+            android:layout_width="24dp"
+            android:layout_height="16dp"
+            android:elevation="2dp"
+            android:layout_alignTop="@id/die"
+            android:layout_alignStart="@+id/die"
+            android:layout_alignEnd="@id/die"
+            android:layout_alignBottom="@+id/die"
+            android:gravity="center"
+            style="@style/title.4"
+            tools:text="8.1"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/film_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/title.2"
+            android:maxLines="1"
+            android:ellipsize="end"
+            tools:text=" Зеленая Миля Зеленая Миля Зеленая"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/_48dp"
+            android:layout_marginBottom="@dimen/_4dp"
+            android:layout_toEndOf="@id/card"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="@dimen/fab_margin"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/film_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/film_title"
+            android:layout_alignStart="@+id/film_title"
+            android:layout_marginBottom="8dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            style="@style/title.3"
+            tools:text="Драмма"/>
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/eye"
+            android:visibility="gone"
+            android:layout_alignEnd="@id/card"
+            android:layout_alignBottom="@id/card"
+            android:layout_margin="@dimen/fab_margin"
+            android:elevation="@dimen/margin_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_viewed"
+            android:tint="@color/white"/>
+
+
+</RelativeLayout>

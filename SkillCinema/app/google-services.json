@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "924452312959",
+    "project_id": "cinemaapp-b4a0f",
+    "storage_bucket": "cinemaapp-b4a0f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924452312959:android:e38705ddecdc56e1f3ec4a",
+        "android_client_info": {
+          "package_name": "com.app.skillcinema"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6yqoxYEpAvgaY1vn7oOXgeItQ0XfNcjk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

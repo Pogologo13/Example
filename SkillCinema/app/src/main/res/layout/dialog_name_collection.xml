@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/X2_fab_margin"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/dialog_background">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/button_dissmiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/margin_8"
+            android:elevation="@dimen/margin_8"
+    android:background="@drawable/baseline_close_24"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/search_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false"
+            android:layout_margin="@dimen/fab_margin"
+            android:backgroundTint="@android:color/transparent"
+            app:hintTextAppearance="@style/title.3_black"
+            android:autofillHints="name"
+            android:background="@android:color/transparent">
+        <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/new_collection_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/new_name_collection"
+                android:backgroundTint="@android:color/transparent"
+                android:background="@android:color/transparent"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/name_is_done_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/is_done"
+            android:layout_margin="@dimen/X2_fab_margin"
+            android:textAllCaps="false"
+            android:textColor="?attr/colorOnPrimary"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/search_bar"
+            android:background="@drawable/button_done"/>
+
+</RelativeLayout>
