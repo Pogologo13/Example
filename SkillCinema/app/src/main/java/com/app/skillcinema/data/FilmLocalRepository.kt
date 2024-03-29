@@ -19,7 +19,6 @@ class FilmLocalRepository @Inject constructor(
 ) {
 
     fun getAllFilms() = filmDao.getAllFilms()
-    fun getAllFilmsCollection(collectionName: String) = filmDao.getAllFilmsCollection(collectionName)
 
     fun getPremiere(date:String) = filmDao.getPremiere(date)
 

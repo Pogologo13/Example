@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">UserData</string>
-    <string name="date">Date</string>
-    <string name="sol">Sol</string>
-    <string name="rover">Rover</string>
-    <string name="login">Login</string>
-</resources>
