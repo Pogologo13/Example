@@ -29,7 +29,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:adjustViewBounds="true"
-                android:src="@drawable/ic_launcher_background"
+                android:src="@drawable/outline"
                 android:scaleType="fitXY"/>
     </androidx.cardview.widget.CardView>
 
