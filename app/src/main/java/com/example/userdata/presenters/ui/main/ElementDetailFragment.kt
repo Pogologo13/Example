@@ -2,6 +2,7 @@ package com.example.userdata.presenters.ui.main
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.transition.TransitionInflater
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -12,6 +13,7 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import com.bumptech.glide.Glide
+import com.example.userdata.R
 import com.example.userdata.databinding.FragmentElementBinding
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
@@ -36,12 +38,10 @@ class ElementDetailFragment : Fragment() {
         super.onCreate(savedInstanceState)
 
 //        //анимация перехода
-//        val animationEnter = TransitionInflater.from(requireContext())
-//            .inflateTransition(R.transition.hange_image_transform)
-//        val animationOut = TransitionInflater.from(requireContext())
-//            .inflateTransition(android.R.transition.move)
-//        sharedElementEnterTransition = animationEnter
-//        sharedElementReturnTransition = animationOut
+        val animationEnter = TransitionInflater.from(requireContext())
+            .inflateTransition(R.transition.hange_image_transform)
+        sharedElementEnterTransition = animationEnter
+
 
         arguments.let {
             login = it?.getString(LOGIN)
