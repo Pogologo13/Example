@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "RickAndMorthy"
+rootProject.name = "UserData"
 include(":app")
  
