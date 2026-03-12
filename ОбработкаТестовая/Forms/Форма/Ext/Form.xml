@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<LabelDecoration name="Декорация3" id="36" DisplayImportance="VeryHigh">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<AutoMaxHeight>false</AutoMaxHeight>
+			<HorizontalStretch>true</HorizontalStretch>
+			<TextColor>style:SpecialTextColor</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По условию исключены все ведомости с четным днем даты документа</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация3КонтекстноеМеню" id="37"/>
+			<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="38"/>
+		</LabelDecoration>
+		<UsualGroup name="Группа1" id="7">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="8"/>
+			<ChildItems>
+				<LabelDecoration name="Декорация1" id="9">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата первого договора</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="Декорация1КонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="11"/>
+				</LabelDecoration>
+				<CheckBoxField name="Равно" id="1">
+					<DataPath>Объект.Равно</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<CheckBoxType>Tumbler</CheckBoxType>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>БЛ='Не равно'; БИ=Равно</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ContextMenu name="РавноКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="РавноРасширеннаяПодсказка" id="3"/>
+				</CheckBoxField>
+				<CheckBoxField name="Максимум" id="4">
+					<DataPath>Объект.Максимум</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<CheckBoxType>Tumbler</CheckBoxType>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>БЛ=Минимум; БИ=Максимум</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ContextMenu name="МаксимумКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="МаксимумРасширеннаяПодсказка" id="6"/>
+				</CheckBoxField>
+				<LabelDecoration name="Декорация2" id="12">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата начала действия договора</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="Декорация2КонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="14"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="45">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="46"/>
+			<ChildItems>
+				<Button name="Готово" id="15">
+					<Type>UsualButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.ЗполнитьНужное</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заполнить нужное</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГотовоРасширеннаяПодсказка" id="16"/>
+				</Button>
+				<Button name="УдалитьЛишнее" id="47">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.УдалитьЛишнее</CommandName>
+					<TextColor>style:ButtonBackColor</TextColor>
+					<BackColor>#E02929</BackColor>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<ExtendedTooltip name="УдалитьЛишнееРасширеннаяПодсказка" id="48"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Ведомости" id="17">
+			<CommandBarLocation>None</CommandBarLocation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Ведомости</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ВедомостиКонтекстноеМеню" id="18"/>
+			<AutoCommandBar name="ВедомостиКоманднаяПанель" id="19"/>
+			<ExtendedTooltip name="ВедомостиРасширеннаяПодсказка" id="20"/>
+			<SearchStringAddition name="ВедомостиСтрокаПоиска" id="21">
+				<AdditionSource>
+					<Item>Ведомости</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВедомостиСтрокаПоискаКонтекстноеМеню" id="22"/>
+				<ExtendedTooltip name="ВедомостиСтрокаПоискаРасширеннаяПодсказка" id="23"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ВедомостиСостояниеПросмотра" id="24">
+				<AdditionSource>
+					<Item>Ведомости</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВедомостиСостояниеПросмотраКонтекстноеМеню" id="25"/>
+				<ExtendedTooltip name="ВедомостиСостояниеПросмотраРасширеннаяПодсказка" id="26"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ВедомостиУправлениеПоиском" id="27">
+				<AdditionSource>
+					<Item>Ведомости</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ВедомостиУправлениеПоискомКонтекстноеМеню" id="28"/>
+				<ExtendedTooltip name="ВедомостиУправлениеПоискомРасширеннаяПодсказка" id="29"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ВедомостиВедомость" id="33">
+					<DataPath>Объект.Ведомости.Ведомость</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ВедомостиВедомостьКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="ВедомостиВедомостьРасширеннаяПодсказка" id="35"/>
+				</InputField>
+				<InputField name="ВедомостиСтатус" id="42">
+					<DataPath>Объект.Ведомости.Статус</DataPath>
+					<Visible>false</Visible>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ВедомостиСтатусКонтекстноеМеню" id="43"/>
+					<ExtendedTooltip name="ВедомостиСтатусРасширеннаяПодсказка" id="44"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ОбработкаТестовая</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗполнитьНужное" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зполнить нужное</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зполнить нужное</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗполнитьНужное</Action>
+		</Command>
+		<Command name="УдалитьЛишнее" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить лишнее</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить лишнее</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьЛишнее</Action>
+		</Command>
+	</Commands>
+</Form>
